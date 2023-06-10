@@ -19,7 +19,9 @@
 
   <script>
     function toggleLED() {
-      fetch('http://192.168.2.30/led', { method: 'POST' });
+      curl 'https://api.twilio.com/2010-04-01/Accounts/AC360446d1d62d110bd1618345ee3c9b62/Messages.json' -X POST \
+      --data-urlencode 'To=+31643883858' \
+      -u AC360446d1d62d110bd1618345ee3c9b62:[Redacted]
     }
   </script>
 </body>
