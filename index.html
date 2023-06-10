@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>LED Control</h1>
+  <button onclick="toggleLED()">Toggle LED</button>
+
+  <script>
+    function toggleLED() {
+      fetch('/led', { method: 'POST' });
+    }
+  </script>
+</body>
+</html>
